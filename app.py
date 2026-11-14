@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
-st.set_page_congig(page_title="Poblacion Mundial", layout="wide")
+st.set_page_config(page_title="Poblacion Mundial", layout="wide")
 st.title("Análisis de la poblacion mundial")
 st.write("Aquí tenemos los 10 paises mas poblados del mundo")
 
@@ -40,9 +40,9 @@ if archivo:
 
 
      grafico = top10.set_index("Country/Territory")[[
-     "2015 population",
-     "2020 population",
-     "2022 population"
+     "2015 Population",
+     "2020 Population",
+     "2022 Population"
 
 ]]/1000000
 
@@ -52,9 +52,9 @@ if archivo:
 
      st.dataframe(top10[[
         "Country/Territory",
-        "2015 population",
-        "2020 population",
-        "2022 population"
+        "2015 Population",
+        "2020 Population",
+        "2022 Population"
     ]])
 
 
